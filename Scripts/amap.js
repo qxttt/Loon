@@ -267,6 +267,8 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "enhanceCustomerServiceFixedBottom",
     "flash_purchase_ticket", // 极速订票
     "CouponBanner", // 高德红包
+    "yellowPageAdRecommendModule", // 淘宝好物推荐
+    "carServiceCard", // 车主服务
     // "anchor",
     "adv_compliance_info", // 服务提供方
     "adv_gift",
