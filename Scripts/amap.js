@@ -237,6 +237,35 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
 } else if (url.includes("/shield/search/poi/detail")) {
   // 搜索结果 模块详情
   const items = [
+    // 4s店相关
+    "autoKaNormShelf", 
+    "brand_service",
+    "shopStdActivity",
+    "enhanceIMQuestions",
+    "imBottomGuide",
+    "car_charging",
+    "retainInfo",
+    "poiDetailBottomBarOperation",
+    // 火车站相关
+    "transportation",
+    "hkfCalendarRecommend",
+    // 餐饮购买
+    "recommend_food",
+    "DinnerBottomBar",
+    "explosiveAtmosphere",
+    "poiDetailHotSaleShelf",
+    "commonGoodsShelf",
+    "serviceBookingGoodsShelf",// 在线订
+    "shop_settlement",// 店主入驻
+    "group_buying_shelf",// 团购
+    "shopBasePerson",// 店员
+    // 月子中心
+    "footer_tel_button", 
+    "adStoreBigBannerModule",
+    "enhanceCustomerServicePoiModule",
+    "shopStructGift",
+    "enhanceCustomerServiceFixedBottom",
+    "flash_purchase_ticket", // 极速订票
     "CouponBanner", // 高德红包
     // "anchor",
     "adv_compliance_info", // 服务提供方
@@ -281,7 +310,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "foreclosurehouse",
     // "gallery_info", // 现场照片
     // "ggc_entry",
-    // "hkfMiniPortal", // 订票页面 飞机 火车 汽车
+    "hkfMiniPortal", // 订票页面 飞机 火车 汽车
     "horizontalGoodsShelf",
     "hotPlay", // 热门玩法
     "hot_new_house_estate",
@@ -289,8 +318,8 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "hotelCoupon",
     "hotelList", // 热门酒店
     "hotelMustRead", // 订房必读
-    // "hotelRooms", // 酒店所有房间
-    // "hourHotelRooms", // 钟点房
+    "hotelRooms", // 酒店所有房间
+    "hourHotelRooms", // 钟点房
     // "houseEvaluationInfo", // 小区居住指数
     "houseList",
     "houseOfficeBrandIntroduction",
@@ -364,7 +393,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "rentsalehouse",
     "residentialOwners", // 小区业主
     "reviews", // 用户评价
-    // "roomSelect", // 选择订房日期 悬浮菜单
+    "roomSelect", // 选择订房日期 悬浮菜单
     "sameIndustryRecommendModule",
     "sameIndustry2RecommendModule",
     // "same_price_new_estate",
@@ -425,6 +454,19 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   if (obj?.data?.headerHotWord?.length > 0) {
     obj.data.headerHotWord = [];
   }
+} else if (url.includes("/shield/search_business/process/marketingOperationStructured")) {
+  // 详情页 顶部优惠横幅
+    delete obj.data.tipsOperationLocation;
+    delete obj.data.resourcePlacement;
+} else if (url.includes("/shield/search_business/process/middleLayer/sug")) {
+  // 搜索列表推广
+  if (obj?.tip_list) {
+    for(let tipitem of obj?.tip_list){
+      delete tipitem?.tip?.product_vo;
+    }
+  }
+} else if (url.includes("/shield/search_poi/homepage")) {
+    delete obj.history_tags; // 首页 搜索框历史记录 推广标签
 } else if (url.includes("/shield/search_poi/search/sp") || url.includes("/shield/search_poi/mps")) {
   if (obj?.data?.list_data) {
     let list = obj.data.list_data.content[0];
