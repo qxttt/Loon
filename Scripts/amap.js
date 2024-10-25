@@ -484,6 +484,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     delete list.map_bottom_bar.hotel;
     delete list.poi.item_info.tips_bottombar_button.hotel;
     // 地图优惠推广
+    delete list.promotion_wrap_card;
     delete list.map.main_point;
     delete list.tips_operation_info;
     delete list.bottom.bottombar_button.hotel;
