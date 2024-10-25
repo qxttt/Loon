@@ -296,11 +296,12 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "coupon_allowance",
     // "coupon_entrance",
     "cpt_service_shop", //买卖二手房
+    "cpt_service_simple", //买房卖房出租租房
     // "craftsman_entry",
     // "crowd_index", // 人流量情况
     "dayTripList", // 热门一日游
     // "detailFeedCommodity",
-    // "detail_bottom_shop_service",
+    "detail_bottom_shop_service",//底部联系框
     "discount_commodity", // 优惠团购
     "divergentRecommendModule", // 你可能还喜欢
     // "evaluate", // 高德出行评分
@@ -388,7 +389,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "question_answer_card", // 问问 地点附近的热门问题
     "quickLink", // 地点详情页图标 酒店 景点 热榜
     "relatedRecommends", // 附近同类型酒店
-    // "realtorRealStep",
+    "realtorRealStep", //经纪人实踩
     "renthouse",
     "rentSaleHouse", // 小区买卖房屋
     "rentsaleagencyv2",
