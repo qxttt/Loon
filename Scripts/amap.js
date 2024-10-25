@@ -469,6 +469,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
       delete tipitem?.tip?.product_vo;
     }
   }
+} else if (url.includes("/shield/search_business/process/recommend")) {
+  delete obj?.data?.poiInfo?.data?.shop;
+  delete obj?.data?.poiInfo?.data?.activityInfo;
 } else if (url.includes("/shield/search_poi/homepage")) {
     delete obj.history_tags; // 首页 搜索框历史记录 推广标签
 } else if (url.includes("/shield/search_poi/search/sp") || url.includes("/shield/search_poi/mps")) {
