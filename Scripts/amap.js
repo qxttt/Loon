@@ -269,6 +269,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "CouponBanner", // 高德红包
     "yellowPageAdRecommendModule", // 淘宝好物推荐
     "carServiceCard", // 车主服务
+    "shoppingMallEvent",//逛街必看
     // "anchor",
     "adv_compliance_info", // 服务提供方
     "adv_gift",
