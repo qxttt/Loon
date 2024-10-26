@@ -377,6 +377,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "operation_banner", // 横版图片推广
     "operator_card",
     "packageShelf", // 附近酒景推荐
+    "package_recommend_shelf", // 酒景套餐
     "parentBizRec",
     "parentPoiRecEntrance", // 所在商圈
     "platformCustomerCommonModule", // 众安保险赔付
