@@ -154,6 +154,8 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       }
     }
   }
+} else if (url.includes("tdtradeplatform.ads.goods.query.cn")) {
+  delete obj.data?.data;
 }
 
 $done({ body: JSON.stringify(obj) });
