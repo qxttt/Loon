@@ -154,7 +154,7 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       }
     }
   }
-} else if (url.includes("tdtradeplatform.ads.goods.query.cn")) {
+} else if (url.includes("/mtop.cainiao.tdtradeplatform.ads.goods.query")) {
   delete obj.data?.data;
 }
 
