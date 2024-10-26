@@ -486,12 +486,12 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     }
     // 详情页 底部 订酒店
     delete list.map_bottom_bar.hotel;
-    delete list.poi.item_info.tips_bottombar_button.hotel;
+    delete list.poi?.item_info?.tips_bottombar_button?.hotel;
     // 地图优惠推广
     delete list.promotion_wrap_card;
-    delete list.map.main_point;
+    delete list.map?.main_point;
     delete list.tips_operation_info;
-    delete list.bottom.bottombar_button.hotel;
+    delete list.bottom?.bottombar_button?.hotel;
     // 搜索页 顶部卡片
     if (list?.card?.card_id === "SearchCardBrand" && list?.item_type === "brandAdCard") {
       delete list.card;
