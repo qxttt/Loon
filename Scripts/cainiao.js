@@ -95,6 +95,7 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
           let newBizs = [];
           for (let i of item.bizData.items) {
             const lists = [
+              "2022shuang11dacu", // 许愿领好礼
               "618cjhb", // 超级红包
               "bgxq", // 包裹星球
               "cncy", // 填字赚现金
