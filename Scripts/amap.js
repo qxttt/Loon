@@ -473,6 +473,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   if (obj?.tip_list) {
     for(let tipitem of obj?.tip_list){
       delete tipitem?.tip?.product_vo;
+      delete tipitem?.tip?.product_info;
     }
   }
 } else if (url.includes("/shield/search_business/process/recommend")) {
