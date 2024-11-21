@@ -246,6 +246,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "car_charging",
     "retainInfo",
     "poiDetailBottomBarOperation",
+    "poiDetailNewBeltV2", // 聚划算 高德限时特惠
     // 火车站相关
     "transportation",
     "hkfCalendarRecommend",
@@ -293,8 +294,8 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "comprehensiveEditEntrance", // 编辑地点信息
     // "consultancy",
     "contributor", // 地点贡献
-    // "coupon_allowance",
-    // "coupon_entrance",
+    "coupon_allowance",
+    "coupon_entrance",
     "CouponWidget", // 充电站 官方入住
     "surroundCarList", // 充电站 品牌云展厅
     "cpt_service_shop", //买卖二手房
@@ -414,19 +415,19 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "scenic_parking",
     "scenic_play_guide", // 景区攻略 游玩攻略 交通攻略
     "scenic_recommend", // 景点建议
-    // "scenic_route",
-    // "scenic_route_intelligent", // 推荐游玩线路
-    // "scenic_service",
-    // "scenic_ski", // 滑雪攻略 雪道数量 设施及服务
-    // "scenic_story",
-    // "scenic_ticket", // 购票
-    // "scenic_ticket_activity", // 购票活动
+    "scenic_route",
+    "scenic_route_intelligent", // 推荐游玩线路
+    "scenic_service",
+    "scenic_ski", // 滑雪攻略 雪道数量 设施及服务
+    "scenic_story",
+    "scenic_ticket", // 购票
+    "scenic_ticket_activity", // 购票活动
     "scenic_voice", // 语音讲解 付费的项目
     "searchPlaMap", // 周边推荐
     "second_surround_estate_tab", // 周边房产
     "service_shop", // 中介门店
     "shopBaseCase", // 小区装修案例
-    // "shop_news",
+    "shop_news",
     "similarShelfRecommend", // 附近的豪华酒店
     "smallListBizRec", // 周边热门酒店
     "smallOrListBizRec",
