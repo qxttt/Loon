@@ -295,6 +295,8 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "contributor", // 地点贡献
     // "coupon_allowance",
     // "coupon_entrance",
+    "CouponWidget", // 充电站 官方入住
+    "surroundCarList", // 充电站 品牌云展厅
     "cpt_service_shop", //买卖二手房
     "cpt_service_simple", //买房卖房出租租房
     // "craftsman_entry",
