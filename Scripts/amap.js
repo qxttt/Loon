@@ -440,6 +440,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "surround_rentoffice",
     "surround_selloffice",
     "thirdparty_info", // 第三方信息
+    "tnHotelRecommendRooms", // 酒店预定
     // "traffic", // 交通出行 地铁站 公交站 停车场
     "travelGuideRec", // 人气景点 路线 购票
     "uploadBar",
