@@ -9,6 +9,7 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   if (obj?.data) {
     const items = [
       "10", // 物流详情页 底部横图
+      "205", // 右下角漂浮图标
       "498", // 物流详情页 左上角
       "328", // 3位数为家乡版本
       "366",
@@ -29,7 +30,8 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       "1524", // 抽现金
       "1525", // 幸运包裹
       "1638", // 为你精选了一些商品
-      "1910" // 618促销红包
+      "1910", // 618促销红包
+      "2193" // 低价退货，首单5折
     ];
     for (let i of items) {
       if (obj.data?.[i]) {
