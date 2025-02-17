@@ -31,6 +31,9 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       "1525", // 幸运包裹
       "1638", // 为你精选了一些商品
       "1910", // 618促销红包
+      "2115",
+      "1820",
+      "2121",
       "2193" // 低价退货，首单5折
     ];
     for (let i of items) {
