@@ -163,6 +163,8 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       }
     }
   }
+}else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch.cn")){
+  delete obj?.data?.data?.wallet;
 }
 
 $done({ body: JSON.stringify(obj) });
