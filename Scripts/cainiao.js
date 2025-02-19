@@ -165,6 +165,9 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   }
 }else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch.cn")){
   delete obj?.data?.data?.wallet;
+  delete obj?.data?.data?.banner;
+  delete obj?.data?.data?.activity;
+  delete obj?.data?.data?.vip;
 }
 
 $done({ body: JSON.stringify(obj) });
