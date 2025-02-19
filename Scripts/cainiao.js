@@ -168,6 +168,8 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   delete obj?.data?.data?.banner;
   delete obj?.data?.data?.activity;
   delete obj?.data?.data?.vip;
+  delete obj?.data?.data?.asset;
+  delete obj?.data?.data?.content;
 }
 
 $done({ body: JSON.stringify(obj) });
