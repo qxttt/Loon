@@ -171,8 +171,17 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   delete obj?.data?.data?.asset;
   delete obj?.data?.data?.content;
 }else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch")){
-obj?.data?.data?.data?.operationList?.pop();
-obj?.data?.data?.data?.operationList?.pop();
+delete  obj?.data?.data?.data?.operationList[1];
+  let item0 = obj?.data?.data?.data?.operationList[0];
+
+  let item0temp = [];
+  for (let d of item0.bizData.items){
+    if (d.title !== '换好物'){
+      item0temp.push(d);
+    }
+  }
+  obj?.data?.data?.data?.operationList[0].bizData.item = item0temp;
+  
 }
 
 $done({ body: JSON.stringify(obj) });
