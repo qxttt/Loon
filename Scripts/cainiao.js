@@ -171,7 +171,8 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   delete obj?.data?.data?.asset;
   delete obj?.data?.data?.content;
 }else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch")){
-  obj?.data?.data?.data?.operationList?.pop();
+obj?.data?.data?.data?.operationList?.pop();
+obj?.data?.data?.data?.operationList?.pop();
 }
 
 $done({ body: JSON.stringify(obj) });
