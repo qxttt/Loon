@@ -172,6 +172,10 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   delete obj?.data?.data?.content;
 }else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch")){
   obj?.data?.data?.data?.operationList?.pop();
+  obj?.data?.data?.data?.operationList[0]?.bizData?.items[0]?.bubbleText;
+  obj?.data?.data?.data?.operationList[0]?.bizData?.items[1]?.bubbleText;
+  obj?.data?.data?.data?.operationList[0]?.bizData?.items[2]?.bubbleText;
+  obj?.data?.data?.data?.operationList[0]?.bizData?.items[3]?.bubbleText;
 }
 
 $done({ body: JSON.stringify(obj) });
