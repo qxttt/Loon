@@ -2,7 +2,7 @@
 #!desc = 过滤菜鸟广告。
 #!author = RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/qxttt/Loon/dev/Icons/app/cainiao.png
-#!date = 2025-03-25 23:33
+#!date = 2025-03-26 13:09
 
 [Rule]
 # 移除广告下发请求
@@ -58,7 +58,7 @@ DOMAIN, youku-acs.m.taobao.com, REJECT
 # 我的页面
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.e2e\.engine\.page\.fetch\.cn script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广new
-
+http-response ^https:\/\/e2e-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.app\.e2e\.engine\.page\.fetch script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广new2
 
 # 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除首页推广
@@ -71,4 +71,4 @@ http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.c
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除菜鸟小程序推广
 
 [MITM]
-hostname = cn-acs.m.cainiao.com, guide-acs.m.taobao.com, netflow-mtop.cainiao.com
+hostname = cn-acs.m.cainiao.com, guide-acs.m.taobao.com, netflow-mtop.cainiao.com, e2e-mtop.cainiao.com
