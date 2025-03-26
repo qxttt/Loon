@@ -1,4 +1,4 @@
-// 2024-09-27 11:50
+// 2024-09-27 14:32
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -171,13 +171,12 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
   delete obj?.data?.data?.asset;
   delete obj?.data?.data?.content;
 }else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch")){
-console.log(obj); 
-obj?.data?.data?.data?.operationList?.pop();
+// obj?.data?.data?.data?.operationList?.pop();
+delete obj?.data?.data?.data?.mainSearch?.bizData?.searchContents;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[0]?.bubbleText;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[1]?.bubbleText;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[2]?.bubbleText;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[3]?.bubbleText;
-  console.log(obj);
 }
 
 $done({ body: JSON.stringify(obj) });
