@@ -31,6 +31,7 @@ DOMAIN, youku-acs.m.taobao.com, REJECT
 [Rewrite]
 # 底部发现页 - 角标
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.home\.tabbar\.marketing\.get\.cn reject-dict
+^https:\/\/home-bff-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.app\.home\.v90\.bottom\.area\/1\.0 reject-dict
 
 # 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn reject-dict
@@ -72,4 +73,4 @@ http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.c
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除菜鸟小程序推广
 
 [MITM]
-hostname = cn-acs.m.cainiao.com, guide-acs.m.taobao.com, netflow-mtop.cainiao.com, e2e-mtop.cainiao.com
+hostname = cn-acs.m.cainiao.com, guide-acs.m.taobao.com, netflow-mtop.cainiao.com, e2e-mtop.cainiao.com, home-bff-mtop.cainiao.com
