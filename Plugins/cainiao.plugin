@@ -2,7 +2,7 @@
 #!desc = 过滤菜鸟广告。
 #!author = RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/qxttt/Loon/dev/Icons/app/cainiao.png
-#!date = 2025-04-04 20:55
+#!date = 2025-04-07 23:15
 
 [Rule]
 # 移除广告下发请求
