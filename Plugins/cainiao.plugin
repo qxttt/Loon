@@ -60,6 +60,7 @@ DOMAIN, youku-acs.m.taobao.com, REJECT
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.e2e\.engine\.page\.fetch\.cn script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广new
 http-response ^https:\/\/e2e-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.app\.e2e\.engine\.page\.fetch script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广new2
+http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.e2e\.engine\.page\.fetch\/1\.0 script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广new2
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.e2e\.engine\.page\.fetch script-path = https://raw.githubusercontent.com/qxttt/Loon/dev/Scripts/cainiao.js, requires-body = true, tag = 移除我的页面推广new2
 
 # 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
