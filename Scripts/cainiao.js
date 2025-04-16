@@ -1,4 +1,4 @@
-// 2024-09-27 14:32
+// 2025-04-16 13:36
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -41,6 +41,21 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       "2121",
       "2189", // 退货3元起
       "2193" // 低价退货，首单5折
+    ];
+    for (let i of items) {
+      if (obj.data?.[i]) {
+        delete obj.data[i];
+      }
+    }
+  }
+} else if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.batch.show.v2.cn")) {
+  if (obj?.data) {
+    const items = [
+      "52#0",
+      "2114#0",
+      "1498#0",
+      "1372#0",
+      "481#0",
     ];
     for (let i of items) {
       if (obj.data?.[i]) {
@@ -165,16 +180,16 @@ if (url.includes("/mtop.cainiao.guoguo.nbnetflow.ads.mshow")) {
       }
     }
   }
-}else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch.cn")){
+} else if (url.includes("/mtop.cainiao.app.e2e.engine.page.fetch.cn")) {
   delete obj?.data?.data?.wallet;
   delete obj?.data?.data?.banner;
   delete obj?.data?.data?.activity;
   delete obj?.data?.data?.vip;
   delete obj?.data?.data?.asset;
   delete obj?.data?.data?.content;
-}else if(url.includes("/mtop.cainiao.app.e2e.engine.page.fetch")){
-obj?.data?.data?.data?.operationList?.splice(2,1);
-delete obj?.data?.data?.data?.mainSearch?.bizData?.searchContents;
+} else if (url.includes("/mtop.cainiao.app.e2e.engine.page.fetch")) {
+  obj?.data?.data?.data?.operationList?.splice(2, 1);
+  delete obj?.data?.data?.data?.mainSearch?.bizData?.searchContents;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[0]?.bubbleText;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[1]?.bubbleText;
   delete obj?.data?.data?.data?.operationList[0]?.bizData?.items[2]?.bubbleText;
