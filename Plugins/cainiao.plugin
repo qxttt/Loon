@@ -33,6 +33,8 @@ DOMAIN, youku-acs.m.taobao.com, REJECT
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.home\.tabbar\.marketing\.get\.cn reject-dict
 ^https:\/\/home-bff-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.app\.home\.v90\.bottom\.area\/1\.0 reject-dict
 
+^https:\/\/netflow\-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow\.cn\/1\.0 reject
+
 # 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn reject-dict
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.cncommunity\.my\.station\.query\.cn reject-dict
