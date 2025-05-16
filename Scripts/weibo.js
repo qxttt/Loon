@@ -727,6 +727,11 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         obj.items = newItems;
       }
     } else if (url.includes("finder")) {
+      // 测试屏蔽
+      if (obj?.channelInfo) {
+        delete obj.channelInfo;
+      }
+      /*
       if (obj?.channelInfo?.channels?.length > 0) {
         let newChannels = [];
         for (let channel of obj.channelInfo.channels) {
@@ -835,6 +840,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         }
         obj.header.data.items = newItems;
       }
+      */
     }
   } else if (url.includes("/2/searchall")) {
     if (obj?.header?.data) {
